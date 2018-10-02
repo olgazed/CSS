@@ -1,0 +1,384 @@
+/*CSS Stylesheet for CSS_Layout_Task: Strict Theme*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	font-family: "Lato", sans-serif;
+	color: #989898;
+	background-color: #f5f9f9;
+	display: flex;
+    flex-direction: column;
+}
+
+main {
+	display: flex;
+    flex-direction: column;
+	text-align: center;
+}
+
+h1,
+h2,
+h3 {
+	color: #343c50;
+}
+
+h2,
+h3 {
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 2.3rem;
+	letter-spacing: .1rem;
+	padding-bottom: 2%;
+	}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+header {
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 15%;
+}
+
+/*These lines are for Internet Explorer*/
+.logoright,
+.logoleft {
+	display: flex;
+	flex-direction: column;
+}
+
+.logoright {
+	margin-top: 7px;
+}
+
+.squares {
+  width: 15px;
+  height: 15px;
+  float: left;
+  background: url("../img/logo_sprite.png") no-repeat;
+  margin: 2px;
+}
+
+.topleft .squares {
+background-position: -5px -20px;
+}
+
+.topright .squares {
+background-position: -5px 0;
+}
+
+.bottomleft .squares {
+background-position: -5px 0;
+}
+
+.bottomright .squares {
+background-position: -5px -20px;
+}
+
+header > h1 {
+	font-size: 1.7rem;
+	padding-left: 1rem;
+}
+
+header a {
+	color: #343c50;
+}
+
+.info {
+	height: 800px;
+	background: rgba(10, 12, 30, .8) url("../img/background_top.jpg") no-repeat;
+	background-size: 100% 100%;
+	background-blend-mode: darken;
+	opacity: .8;
+	text-align: center;
+}
+
+.info > h1 {
+	font-size: 7rem;
+	color: #fff;
+	padding-top: 15%;
+	padding-bottom: 2%;
+	z-index: 10;
+}
+
+hr {
+	width: 40%;
+	margin: 0 30% 0 30%;
+	border-color: #15a4fa;
+	z-index: 10;
+}
+
+.info > h2 {
+	font-size: 1.1rem;
+	color: #fff;
+	padding-top: 3%;
+	padding-bottom: 5%;
+	z-index: 10;
+}
+
+button {
+  	width: 12%;
+  	padding: .8rem;
+  	font-size: 1rem;
+  	color: #fff;
+  	border: 1px solid #fff;
+  	border-radius: .3rem;
+  	text-align: center;
+  	background-color: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+	border-color: #15a4fa;
+}
+
+.info > a {
+	display: block;
+	padding-top: 13%;
+	font-size: 1.5rem;
+	z-index: 10;
+}
+
+.info > a > i {
+	color: #fff;
+}
+
+article {
+	padding: 5%;
+}
+
+article > p {
+	width: 85%;
+	margin: 0 auto;
+	font-size: 1.1rem;
+	line-height: 2rem;
+	padding-bottom: 2%;
+}
+
+section:nth-child(3) {
+	background-color: #fff;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 3% 12%;
+}
+
+section:nth-child(3) figure {
+	padding: 3%;
+}
+
+figure > i {
+	font-size: 2rem;
+	color: #fff;
+	background-color: #15a4fa;
+	background: linear-gradient(to right, #15a4fa 50%, #84d1ff 50%);
+	padding: 1.5rem;
+}
+
+#first {
+	padding-right: 2rem;
+	padding-left: 2rem;
+}
+
+figcaption {
+	margin-top: 10%;
+}
+
+figcaption > h3 {
+	padding-bottom: 5%; 
+	letter-spacing: .03rem;
+}
+
+figcaption > p {
+	font-size: .8rem; 
+}
+
+section:nth-child(4) h2 {
+	padding-top: 5%;
+}
+
+section:nth-child(4) p {
+	color: #8f8f8f;
+	padding-bottom: 1%;
+}
+
+#gallery {
+	width: 75%;
+	height: 500px;
+	margin: 0 auto;
+	padding: 2% 5% 5% 5%;
+}
+
+#gallery figure {
+	float: left;
+    width: 31.3%;
+    margin: 1%;
+	box-sizing: border-box;
+	position: relative;
+}
+
+#gallery figure img {
+	display: block;
+	position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #f5f9f9;
+    box-sizing: border-box;
+}
+
+.photo figcaption {
+	position: absolute;
+	top: 30%;
+	left: 36%;
+    box-sizing: border-box;
+ 	display: flex;
+ 	flex-direction: row;
+ 	justify-content: space-around;
+ 	z-index: 10;
+ 	visibility: hidden;
+} 
+
+figcaption a {
+	border: 1px solid #fff;
+	border-radius: 0.2rem;
+	margin: 0.3rem;
+}
+
+figcaption a i {
+	font-size: 1rem;
+	color: #fff;
+	padding: 0.5rem;
+}
+
+.photo {
+    display: block;
+    position: relative;
+}
+
+.photo:hover {
+	cursor: pointer;
+}
+
+figure::after {
+    content: '';
+    background: rgba(21, 164, 250, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+   	visibility: hidden;
+}
+
+.photo:hover > figure::after,
+.photo:hover > figure figcaption {
+    visibility: visible;
+}
+
+.contact {
+ 	height: 700px;
+	background: rgba(5, 25, 90, .9) url("../img/background_bottom.jpg") no-repeat;
+	background-size: 100% 100%;
+	background-blend-mode: darken;
+	opacity: .8;
+}
+
+form {
+	padding-top: 5%;
+	color: #999;
+	width: 36vw;
+	margin: 0 auto;
+	z-index: 10;
+}
+
+form > h2 {
+	font-size: 2rem;
+	color: #fff;
+	letter-spacing: .2rem;
+	padding-bottom: 1%;
+}
+
+form > p {
+	padding-bottom: 5%;
+}
+
+form > h2 + p {
+	font-size: 1rem;
+	padding-bottom: 10%;
+}
+
+p > button {
+	width: 27%;
+	height: 2.2%;
+	margin-right: 0;
+}
+
+form > p:last-child {
+	height: 8%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;   
+    align-items: center;
+}
+
+input[type="checkbox"] {
+width: 1.1rem;
+height: 1.1rem;
+background-color: rgb(173, 178, 181);
+opacity: .6;
+}
+
+label[for="Subscribe"] {
+	font-size: 0.8rem;
+	color: #fff;
+	margin-right: 10rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	width: 33vw;
+	padding: 1.5vw;
+	border: 1px solid #fff;
+	border-radius: .3vw;
+	background-color: transparent;
+	font-size: .9rem;	
+}
+
+textarea {
+	font-size: 1.2rem;
+	height: 10vw;
+}
+
+footer {
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer > p {
+	padding-left: 15%;
+	font-size: .9rem;
+}
+
+.icons {
+	padding-right: 15%;
+	font-size: 2.5rem;
+}
+
+a > i {
+	color: #15a4fa;
+}

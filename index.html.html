@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset= "utf-8">
+        <title>Task2_CSSLayout</title>
+        <script src="https://use.fontawesome.com/f3fc90efeb.js"></script>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <base target="_blank">
+	</head>
+	<body>
+		<header>
+			<!--<img src="img/logo.png" alt="STRICT logo">
+				I've used sprites just to give it a try, but I don't think that sprites are a good choice in this particular case, 
+				using logo image is much easier, works perfectly fine and needs much less code lines and effort-->
+			<div class="logoleft">
+				<div class="topleft"><div class="squares"></div></div>
+				<div class="bottomleft"><div class="squares"></div></div>
+			</div>
+			<div class="logoright">
+				<div class="topright"><div class="squares"></div></div>	
+				<div class="bottomright"><div class="squares"></div></div>
+			</div>
+			<h1>
+				<a href="#">
+					STRICT
+				</a>
+			</h1>
+		</header>
+		<main>
+			<section>
+				<div class="info">
+					<h1>STRICT</h1>
+					<hr>
+					<h2>STRICT is a responsive theme with a clean and minimal look.</h2>
+					<button name="CallToAction">Call to action</button>
+					<a href="#form" target="_self">
+						<i class="fas fa-chevron-down"></i>
+					</a>
+				</div>
+				<article>
+					<h2>Simple &amp; pure design.</h2>
+					<p>
+						Designers everywhere gush with admiration upon seeing a web design and exclaim "it's beautiful, it's so clean!" There are a countless number of web design round-ups dedicated to 'clean' design and it is a term thrown around quite a bit in the web design community. It can be easy to spot a good example of clean design.
+					</p>
+				</article>
+				<section>
+					<figure>
+						<i class="fas fa-mobile-alt" id="first"></i>
+						<figcaption>
+							<h3>Optimized for all devices</h3>
+							<p>STRICT has been designed to be fully responsive on all devices</p>
+						</figcaption>
+					</figure>
+					<figure>
+						<i class="fas fa-paper-plane"></i>
+						<figcaption>
+							<h3>Clean &amp; minimal design</h3>
+							<p>The multipurpose theme is especially created to be used for different projects.</p>
+						</figcaption>
+					</figure>
+					<figure>
+						<i class="fas fa-bullhorn"></i>
+						<figcaption>
+							<h3>Font Awesome Icon</h3>
+							<p>The multipurpose theme is especially created to be used for different projects.</p>
+						</figcaption>
+					</figure>
+				</section>
+				<section>
+					<h2>Showcase your work like a pro.</h2>
+					<p>Contact me if you like my work</p>
+					<div id="gallery">
+						<div class="photo">	
+							<figure>
+								<img src="img/img1.png" alt="A bike in a street">
+								<figcaption>
+									<a href="img/img1_large.png">
+										<i class="fas fa-search-plus"></i>
+									</a>
+									<a href="img/img1_large.png" download="img/img1_large.png">
+										<i class="fas fa-link"></i>
+									</a>
+								</figcaption>
+							</figure>	
+						</div>
+						<div class="photo">
+							<figure>
+								<img src="img/img2.png" alt="A girl with sunglasses">
+								<figcaption>
+									<a href="img/img2_large.png">
+										<i class="fas fa-search-plus"></i>
+									</a>
+									<a href="img/img2_large.png" download="img/img2_large.png">
+										<i class="fas fa-link"></i>
+									</a>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="photo">
+							<figure>
+								<img src="img/img3.png" alt="Two red mugs and a smile">
+								<figcaption>
+									<a href="img/img3_large.png">
+										<i class="fas fa-search-plus"></i>
+									</a>
+									<a href="img/img3_large.png" download="img/img3_large.png">
+										<i class="fas fa-link"></i>
+									</a>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="photo">
+							<figure>
+								<img src="img/img4.png" alt="Splashes in a cup of tea">
+								<figcaption>
+									<a href="img/img4_large.png">
+										<i class="fas fa-search-plus"></i>
+									</a>
+									<a href="img/img4_large.png" download="img/img4_large.png">
+										<i class="fas fa-link"></i>
+									</a>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="photo">
+							<figure>
+								<img src="img/img5.png" alt="A bike in a garage">
+								<figcaption>
+									<a href="img/img5_large.png">
+										<i class="fas fa-search-plus"></i>
+									</a>
+									<a href="img/img5_large.png" download="img/img5_large.png">
+										<i class="fas fa-link"></i>
+									</a>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="photo">
+							<figure>
+								<img src="img/img6.png" alt="A bike in a night street">
+								<figcaption>
+								<a href="img/img6_large.png">
+									<i class="fas fa-search-plus"></i>
+								</a>
+								<a href="img/img6_large.png" download="img/img6_large.png">
+									<i class="fas fa-link"></i>
+								</a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+				</section>
+				<div class="contact">	
+					<form name="ContactUs" action="#" method="post" id="form">
+						<h2>Stay with us</h2>
+						<p>
+							We ensure quality &amp; support
+						</p>
+						<p>
+							<input type="text" id="fullname" name="full_name" placeholder="Full Name">
+						</p>
+						<p>
+							<input type="email" id="email" name="email_address" placeholder="Email Address">
+						</p>
+						<p>
+							<textarea id="message" name="message" placeholder="Message"></textarea>
+						</p>
+						<p>
+							<input type="checkbox" id="Subscribe">
+							<label for="Subscribe">Subscribe Newsletter</label>
+							<button name="Send">Send</button>
+						</p>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<p>Copyright 2014, STRICT</p>
+			<div class="icons">
+				<a href="#">
+					<i class="fab fa-facebook-square"></i>
+				</a>
+				<a href="#">
+					<i class="fab fa-twitter-square"></i>
+				</a>
+				<a href="#">
+					<i class="fab fa-google-plus-square"></i>
+				</a>
+				<a href="#">
+					<i class="fab fa-linkedin"></i>
+				</a>
+			</div>
+		</footer>
+	</body>
+</html>
